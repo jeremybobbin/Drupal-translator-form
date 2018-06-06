@@ -1,0 +1,13 @@
+<?php
+
+function jer_mod_menu() {
+    $items = [];
+    $items['translate'] = [
+        'title' => 'Translate',
+        'page callback' => 'jer_mod_tranlate_page',
+        'access arguments' => ['access content'],
+        'file' => 'jer_mod.translate.inc',
+        'weight' => 1,
+    ];
+    return $items;
+}
